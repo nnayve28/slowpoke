@@ -4,10 +4,12 @@
 \alias{rarity_by_release}
 \title{Count card rarity by grouping variable}
 \usage{
-rarity_by_release(grouping_var)
+rarity_by_release(grouping_var, dat = NULL)
 }
 \arguments{
 \item{grouping_var}{A column to group by (unquoted).}
+
+\item{dat}{Optional pre-loaded tibble from load_data(). Loaded automatically if NULL.}
 }
 \value{
 A tibble with counts of each rarity by group.

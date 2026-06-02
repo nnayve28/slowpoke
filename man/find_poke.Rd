@@ -4,10 +4,12 @@
 \alias{find_poke}
 \title{Find Pokémon by name pattern}
 \usage{
-find_poke(poke_name)
+find_poke(poke_name, dat = NULL)
 }
 \arguments{
 \item{poke_name}{A character string to match against Pokémon names.}
+
+\item{dat}{Optional pre-loaded tibble from load_data(). Loaded automatically if NULL.}
 }
 \value{
 A tibble of matching Pokémon card names and their flavor text.
